@@ -1,0 +1,25 @@
+commands:
+  minage: #command name
+    permission: nevariumcore.minage #facultative permission option needed to execute the command. If not set, the command will be available to all players if have customtpcommand.globaltp permission
+    world: minage #world where tp the player
+    description: tp au monde minage #facultative description of the command. If none, the description will be the command name
+    message: Bon minage!!! #facultative message to send to the player when he use the command
+    rememberLocation: true #if true, the player will be teleported back to his previous location, else none
+    cooldown: 60 #cooldown in seconds
+  survie:
+    world: world
+    message: Bonne survie!!!
+    rememberLocation: true
+    cooldown: 60
+  nether:
+    world: world_nether
+    message: Bonne survie dans le nether!!!
+    rememberLocation: true
+    cooldown: 60
+  end:
+    world: world_the_end
+    message: Bonne survie dans l'end!!!
+    rememberLocation: true
+    cooldown: 60
+cooldownMessage: "Vous devez attendre %time% secondes avant de pouvoir utiliser cette commande."
+noPermissionMessage: "Vous n'avez pas la permission d'utiliser cette commande."

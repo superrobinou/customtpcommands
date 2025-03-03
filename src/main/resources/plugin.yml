@@ -1,0 +1,6 @@
+main: fr.robinpluginsmc.customtpcommands.CustomTpMain
+name: NevariumCore
+version: 1.0.0
+description: coeur du serveur Nevarium
+author: Robin Thomas
+api-version: 1.21.4
