@@ -30,9 +30,8 @@ public class CustomTpMain extends JavaPlugin{
             if(section2!=null){
                 String message=section2.getString("message");
                 String world=section2.getString("world");
-                
-                String description=section2.getString("world");
-                String permission=section2.getString("world");
+                String description=section2.getString("description");
+                String permission=section2.getString("permission");
                 Boolean rememberLocation=section2.getBoolean("rememberLocation");
                 if(rememberLocation){
                     worlds.add(world);
@@ -43,7 +42,7 @@ public class CustomTpMain extends JavaPlugin{
             final Field bukkitCommandMap = Bukkit.getServer().getClass().getDeclaredField("commandMap");
            bukkitCommandMap.setAccessible(true);
           CommandMap commandMap = (CommandMap) bukkitCommandMap.get(Bukkit.getServer());
-          commandMap.register("nevariumCore", command);
+          commandMap.register("customTpMain", command);
 } catch(IllegalAccessException | IllegalArgumentException | NoSuchFieldException | SecurityException e) {
 }
             }
